@@ -82,7 +82,7 @@ public class HorizontalStepper extends AbstractStepper
    * @param labelFactory
    *     The label factory used to create step labels
    */
-  private HorizontalStepper(StepIterator stepIterator,
+  protected HorizontalStepper(StepIterator stepIterator,
                             SerializableSupplier<StepLabel> labelFactory) {
     this(stepIterator, new LabelProvider(stepIterator, labelFactory));
   }
